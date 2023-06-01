@@ -424,6 +424,49 @@ input[type='checkbox'] {
 }
 /* end of form success and error message formatting */
 
+
+.img-fluid{
+	pointer-events: none;
+	-drag:none;  
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+}
+
+.floatimg{
+	
+	animation: fadeInFromTop .5s linear forwards, floating ease 6s infinite;
+}
+
+
+
+@keyframes fadeInFromTop{
+	from{
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	to{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+@keyframes floating {
+	0%{
+		transform: translate(0%, -3%) rotate(360deg);
+	}
+	
+	50%{
+		transform: translate(0%, 2%) rotate(360deg);
+	}
+	
+	100%{
+		transform: translate(0%, -3%) rotate(360deg);
+	}
+	
+}
+
 /* Form Success And Error Message Animation - Animate.css */
 @-webkit-keyframes tada {
 	from {
@@ -1887,6 +1930,7 @@ a:hover.back-to-top {
 
 	.basic-1 .text-container {
 		margin-bottom: 0;
+		text-align: left;
 	}
 	/* end of details */
 
@@ -2145,3 +2189,15 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width width 1200px */
+
+.lastbtn{
+	border-color:#ffffff;
+	border-radius: 25px;
+	background-color: #03132d;
+	border-width: 3px;
+	color:#ffffff;
+	font-size:medium;
+	margin-top: 12px;
+	padding-right: 15px;
+	padding-left:15px ;
+}
